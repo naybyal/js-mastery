@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="inner">
+            <label align="center" for="myCheckbox">Subscribe to our channel!</label>
+            <input type="checkbox" id="myCheckbox">
+            <br>
+            <label for="upiBtn">UPI</label>
+            <input type="radio" name="card" id="upiBtn">
+
+            <label for="visaBtn">Visa</label>
+            <input type="radio" name="card" id="visaBtn">
+
+            <label for="paypalBtn">PayPal</label>
+            <input type="radio" name="card" id="paypalBtn">
+            
+            <button class="fade" type="submit" id="myButton">submit</button>
+        </div>
+        
+        <p id="myMessage"></p>
+        <p id="paymentInfo"></p>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
