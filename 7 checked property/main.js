@@ -20,7 +20,7 @@ rootButton.onclick = () => {
         rootDescription.textContent = 'Congratulations! You are subscribed to our channel.';
     }
     else if (rootCheckbox.checked) {
-        rootDescription.textContent = 'Kindly choose a payment gateway.';
+        rootDescription.textContent = 'Kindly choose a payment gateway. ;)';
         rootPayInfo.textContent = '';
     } 
     else {
