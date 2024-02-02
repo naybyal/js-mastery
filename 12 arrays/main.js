@@ -51,3 +51,21 @@ console.log(fruits);
 
 //  Matrices
 
+fruits = ['apple', 'orange', 'raspberry'];
+let veggies = ['tomato', 'cucumber', 'carrot'];
+let meats = ['chicken', 'buff', 'mutton'];
+
+let groceryList = [fruits, veggies, meats];
+
+for (let list of groceryList) {
+    for (let food of list) {
+        console.log(food);
+    }
+}
+
+//  Spread operator  : ...
+/**
+ * allows an iterable such as an array or string to be expanded
+ * in places where zero or more arguments are expected.
+ * (unpacks the elements)
+ */
