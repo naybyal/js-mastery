@@ -6,3 +6,6 @@ if (temp > 0 && temp < 30) {
 
 if (temp <= 0 || temp >= 30 && sunny)    console.log('Weather is bad.');
 else console.log('Weather is good.');
+
+console.log(`Is it sunny? : ${ sunny }`);
+console.log(`Whats is the temperature? : ${ temp }degC`);
