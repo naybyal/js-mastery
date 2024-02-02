@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    margin: 0 auto;
+}
+main {
+    margin: 0 auto;
+    justify-content: center;
+
+}
+h3 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+.convert {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    
+}
+#convertBtn{
+    /* width: 50%; */
+    padding: 1rem;
+    margin: 1rem;
+    /* text-decoration: none; */
+    font-weight: bold;
+    font-family: monospace;
+    border-style: groove;
+    cursor: pointer;
+
+    /* border-radius: 20%; */
+}
+
+#textBox {
+    background-color: black;
+    color: white;
+    border-style: groove;
+    border-radius: 1em;
+    text-align: center;
+}
+header {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    font-family: monospace;
+    font-size: xx-large;
+    margin: 1em;
+}
+.fade {
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: background-color .5s;
+}
+
+.fade:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.result {
+    margin-top: 2rem;
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+}
+footer {
+    align-items: end;
+    justify-content: center;
+    /* margin: 0 auto; */
+    display: grid;
+    font-family: monospace;
+    font-size: small;
+    position: relative;
+    
+    margin-top: 20rem;
+}
