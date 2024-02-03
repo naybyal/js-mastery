@@ -35,6 +35,10 @@
  * 
  *  set     ->  binds an object property to a function
  *              when that property is assigned to a value
+ * 
+ *  anonymous objects   ->  objects without a name
+ *                          not directly referenced
+ *                          less syntax; no need for unique names
  */
 
 let car = {
@@ -93,6 +97,10 @@ class Car{
         Car.numberOfCars += 1;
     }
 
+    drive() {
+        console.log(`${this._model} has started driving!`)
+    }
+
     static startRace = () => { 
         console.log("3..2..1..GO!"); 
     }
@@ -140,3 +148,27 @@ car1.fuel = -1;
 console.log(car1.fuel);
 
 
+//  array of objects
+
+const cars = [car1, car2, car3, car4];
+
+console.log(cars[1].model);
+console.log();
+function startRace(cars) {
+    for (const car of cars) {
+        car.drive();
+    }
+}
+
+startRace(cars);
+
+const newCarArray = [
+    new Car("RR Velar"),                //  clean code!
+    new Car("LR Discovery"),
+    new Car("Superb"),
+    new Car("Volvo S90")
+];
+
+for (const car of newCarArray) {
+    console.log(car);
+}

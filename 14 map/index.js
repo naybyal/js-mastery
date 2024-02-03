@@ -8,11 +8,18 @@ let guitarStore = new Map([
     ["*strandberg.", 2000]
 ]);
 console.log('--- THE GUITAR CENTRE ---');
-guitarStore.forEach((value, key) => console.log(`${ key } $${ value }`));
+// guitarStore.forEach((value, key) => console.log(`${ key } $${ value }`));
 
+function addToStore(store, key, value) {
+    store.set(key, value);
+}
 
 let shoppingCart = 0;
 
+addToStore(guitarStore, "PRS", 1300);
+guitarStore.delete('PRS');
+guitarStore.forEach((value, key) => console.log(`${ key } $${ value }`));
+console.log();
 function addToCart(item, shop) {
     shoppingCart += shop.get(item);
     console.log(`Added ${ item } guitar to the cart.`);
@@ -22,4 +29,6 @@ function addToCart(item, shop) {
 addToCart('Ibanez', guitarStore);
 addToCart('*strandberg.', guitarStore);
 
-console.log(`Total amount : $${ shoppingCart }`)
+console.log(`\nTotal amount : $${ shoppingCart }`)
+
+console.log(`\nHas Ibanez in stock? : ${ guitarStore.has('Ibanez') ? 'Yes!' : 'No. :(' }`)
