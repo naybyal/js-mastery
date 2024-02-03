@@ -1,2 +1,2 @@
-# js-mastery
+# JavaScript Mastery
 Almost mastering JavaScript.
